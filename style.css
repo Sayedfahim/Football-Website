@@ -1,0 +1,209 @@
+/* css_link */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+/*  Top Section*/
+
+.top-section h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(185, 183, 13);
+}
+.top-section h2{
+    font-size: 30px;
+}
+#second{
+    color: aliceblue;
+}
+.font-color{
+    color: rgb(237, 100, 100);
+}
+.top-row{
+    width: 50%;
+    margin-left: 8%;   
+}
+.top-margin{
+    margin-top: 100px;
+}
+.top-row img{
+    width: 90%;   
+}
+.top-section{
+    display: flex;
+    margin-bottom: 10px;
+    background-image: url(image/top-banner.png);
+    background-repeat: no-repeat;
+}
+.button{
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(0, 183, 255),rgb(89, 71, 255));
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(30, 165, 255, 0.432);
+}
+.top-section:hover .cr7 {
+    transform: rotate(-20deg);   
+}
+.cr7{
+    transition: transform 0.2s ease-in ;
+}
+.ball{
+    background-image: url(image/544790.jpg);
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 420px;
+    right: 390px;
+    transition: transform 1s  ;
+}
+.top-section:hover .ball{
+    transform: translate(250px, -100px);
+}
+
+
+/* Team of the Tournament Section */
+
+.second-section{
+    margin-bottom: 100px;
+    min-width: auto;
+    min-height: auto;
+}
+.Middle-section{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(13, 73, 185);
+}
+.photo-frame{
+    height: 550px;
+    width: 300px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin-left: 200px; 
+}
+.photo-details p{
+    text-align: justify;
+}
+.photo-details h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+/* UEFA EURO 2021 Winner Section */
+
+.third-section h1{
+    text-align: justify;
+    color: rgb(13, 39, 185);
+    font-size: 20px;
+    font-weight: 700;
+}
+.third-row p{
+    text-align: justify;
+    font-size: larger;
+    }
+
+.third-section{
+    display: flex;
+    margin-bottom: 0px;
+    background-image: url(image/football/2693485.jpg);
+    background-repeat: no-repeat;
+}
+.third-row{
+    width: 50%;
+    margin-left: 8%;
+}
+.third-margin{
+    margin-top: 10px;
+}
+.third-row img{
+    width: 100%;   
+}
+#pera{
+    color: brown;
+}
+
+
+
+/* Highlights */
+
+.fourth-section{
+    background-image: url(image/football/fkBXRa.jpg);
+    background-repeat: no-repeat;
+}
+.fourth-row h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 8%;
+    color: rgb(255, 255, 255);
+}
+.video-show{
+   padding-bottom: 15px;
+   text-align: center; 
+}
+
+
+
+/* Logo_Section */
+
+.logo{
+    text-align: center; 
+}
+.logo img{
+    width: 500px;
+}
+.icon{
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+/* footer_Section */
+
+.footer-para{
+    text-align: center;
+}
+
+
+
+
+/* media_Section */
+
+@media (max-width: 688px) {
+    .second-section{
+        flex-direction: column;
+        grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    }
+    .photo-album{
+        flex-direction: column;
+        grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    }
+    .top-section{
+        flex-direction: column;
+    }
+}
